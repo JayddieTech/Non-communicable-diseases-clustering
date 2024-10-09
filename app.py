@@ -7,7 +7,7 @@ import joblib  # Assuming you're using joblib to save/load your model
 app = Flask(__name__)
 
 # Load the pre-trained KMeans model
-model = joblib.load('kmeans_clustering_model.pkl')  
+model = joblib.load('kmeans_model.pkl')  
 
 @app.route('/predict_cluster', methods=['POST'])
 def predict_cluster():
